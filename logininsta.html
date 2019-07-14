@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+        <h3 align = "center">Login details</h3>
+        <script>
+            function logininsta()
+            {
+                var uname=document.getElementById("username").value;
+                var password=document.getElementById("password").value;
+                if(uname == "Mahee" && password == "Mahee1326")
+                {
+                    alert("login successfully");
+                    if(window.confirm("do you want to continue?")){
+                        window.open("MyInstaPage.html");
+                    }
+                    else{
+                        window.close();
+                    }
+                }
+                else{
+                    alert("Inavalid credetials");
+                    if(alert){
+                        alert("try again");
+                    }
+                }
+
+            }
+            </script>
+    </head><br />
+    <body bgcolor = "skyblue" width=500 height=350>
+    <form name = "login" method="post"></form>
+    <center>
+     <b>User Name:</b>
+      <input type = "text" name = "fname" size = 20 id="username"><br /><br />
+     <b>password:</b>
+      <input type = "password" value = "psword" id="password"><br /><br />
+       <input type = "submit" value = "Login" id="submit" onClick="logininsta()"/>
+       <input type = "button" value = "New account">
+        </center>
+        </form>
+    </body>
+</html>
